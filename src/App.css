@@ -1,38 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
 .App {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+
+body {
+  background-color: #f6f6f6;
+}
+
+*::-webkit-scrollbar {
+
+  width: 5px;
+  height: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 204, 204);
+  border-radius: 10px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 10px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px #ddd;
+  margin-bottom: -80px;
+  width: auto;
+  position: relative;
+}
+
+form h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form input {
+  width: 350px;
+  position: relative;
+  padding: 15px 25px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 7px;
+  background-color: transparent;
+  color: #121212;
+  border: 1px solid rgba(40, 40, 70, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input_container {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn_container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn_container button {
+  background: #ffcb74;
+  color: #111111;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.btn_container button:hover {
+  background: #111111;
+  color: #ffcb74;
+  transition: all .5s ease;
+}
+
+.btn_container button:not(hover) {
+  transition: all .5s ease;
+}
+
+.todo_container {
+  width: 100%;
+  margin: 0 auto;
+  max-height: 400px;
+  color: white;
+  position: relative;
+}
+
+.todo {
+  margin-top: 20px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  color: white;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  border: 1px solid rgba(40, 40, 70, 0.1);
+}
+
+.todos-item {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todo input {
+  cursor: pointer;
+  width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button-complete,
+.button-delete,
+.button-edit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.button-complete:hover,
+.button-delete:hover,
+.button-edit:hover {
+  filter: brightness(1.20);
+  transition: all .5s ease;
+}
+
+#i {
+  font-size: 30px;
+}
+
+.button-complete {
+  color: #95faa3;
+  margin-right: 10px;
+}
+
+.button-edit {
+  color: #56cfff;
+  margin-right: 10px;
+}
+
+.button-delete {
+  color: rgb(255, 122, 98);
+}
+
+@media screen and (max-width: 667px) {
+  .task_container {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .task {
+    margin-right: 0px;
   }
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.menu_container {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* Smooth shadow */
+
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  left: -400px;
+}
+
+.title {
+  color: #111111;
+}
+
+.dropdown {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  margin-left: 100px;
+  position: relative;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.dropdown h2 {
+  color: #111111;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.drop-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+  left: 300px;
+  padding: 5px;
+}
+
+.drop-list:hover {
+  background: #f6f6f6;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.item-list {
+  position: relative;
+  font-size: 25px;
+  color: #ffcb74;
+}
+
+.btn_add {
+  width: 200px;
+  position: static;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 25px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+  background-color: #ffcb74;
+  border: none;
+  /* Светлая тема/Фон */
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.btn_add:hover {
+  transition: all 0.5s ease;
+  background-color: #23beb9;
+}
+
+
+.container_todos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.todosall_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  position: relative;
+  width: 400px;
+  min-height: 350px;
+  max-height: 350px;
+  top: 100px;
+
+  /* Темная тема/Карточка */
+
+  background: #fff;
+  /* Smooth shadow */
+
+  box-shadow: 0px 5px 10px rgba(23, 37, 39, 0.293);
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: white;
+  margin: 30px 0px;
+  margin-right: 15px;
+}
+
+.todosall_container h2 {
+  color: #111111;
+}
+
+scroll-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 16px;
+  color: #111111;
+}
+
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.item-logo {
+  position: relative;
+  font-size: 35px;
+  color: #ffcb74;
 }
