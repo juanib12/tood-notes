@@ -1,0 +1,83 @@
+.form-login {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 150px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-login input {
+    margin-top: 15px;
+}
+
+.form-login input:focus {
+    background-color: rgb(249, 249, 249);
+}
+
+.form-login button {
+    margin-top: 30px;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffcb74;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-login button:hover {
+    transition: all 0.3s ease;
+    background-color: #121212;
+    color: #ffcb74;
+}
+
+.footer-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.link {
+    color: #ffa200;
+}
+
+.link:hover {
+    background-color: #eee;
+    border-radius: 7px;
+}
+
+.logo-navbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left: -500px;
+    top: -80px;
+}
+
+.menu_container-navbar {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    left: 0px;
+    top: 0px;
+    background-color: #ffcb74;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.item-navbar {
+    position: relative;
+    font-size: 35px;
+    color: #121212;
+}

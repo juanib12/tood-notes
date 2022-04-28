@@ -26,7 +26,7 @@ body {
   border-radius: 10px;
 }
 
-form {
+.form {
   max-width: 400px;
   margin: 0 auto;
   background: white;
@@ -39,17 +39,17 @@ form {
   position: relative;
 }
 
-form h2 {
+.form h2 {
   text-align: center;
 }
 
-form input {
+.form input {
   width: 350px;
   position: relative;
   padding: 15px 25px;
   outline: none;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   border-radius: 7px;
   background-color: transparent;
   color: #121212;
@@ -160,15 +160,7 @@ form input {
   color: rgb(255, 122, 98);
 }
 
-@media screen and (max-width: 667px) {
-  .task_container {
-    width: 90%;
-  }
 
-  .task {
-    margin-right: 0px;
-  }
-}
 
 input:focus,
 button:focus {
@@ -197,7 +189,7 @@ button:focus {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  left: -400px;
+  left: -300px;
 }
 
 .title {
@@ -244,6 +236,17 @@ a {
   margin-left: 10px;
   left: 300px;
   padding: 5px;
+}
+
+.drop-list button {
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background-color: #ffcb74;
+  color: #121212;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
 }
 
 .drop-list:hover {
@@ -349,3 +352,180 @@ scroll-page {
   font-size: 35px;
   color: #ffcb74;
 }
+
+.auth-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  position: relative;
+  margin-left: 20px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .menu_container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .logo {
+    left: 0px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .form button {
+    width: 100%;
+    position: relative;
+  }
+
+  .container_todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .todosall_container {
+    width: 300px;
+    left: 10px;
+  }
+
+  .todo input {
+    font-size: 15px;
+  }
+
+  #i {
+    font-size: 22px;
+  }
+
+  .btn_container {
+    margin: 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .App {
+    margin: 0px;
+  }
+
+  .menu_container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .logo {
+    left: 0px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .drop-list {
+    display: none;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .form input {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .container_todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu_container {
+    width: 100%;
+  }
+
+  .logo {
+    left: 0px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .form {
+    width: 300px;
+  }
+
+  .form input {
+    width: 250px;
+  }
+
+  .container_todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+
+/* 
+@media only screen and (max-width: 992px) {
+  .menu_container {
+    width: 100%;
+  }
+
+  .logo {
+    left: -150px;
+  }
+
+  .dropdown{
+    right: 200px;
+  }
+
+  form {
+    width: 300px;
+  }
+
+  form input {
+    width: 250px;
+  }
+
+  .container_todos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+} */
