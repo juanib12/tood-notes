@@ -21,7 +21,7 @@ function App() {
         <>
           <Routes>
             <Route
-              path="/tood-notes/tood-notes/home"
+              path="/tood-notes/home"
               element={
                 <ProtectedRoute>
                   <Home />
@@ -29,9 +29,9 @@ function App() {
               }
             />
             <Route path="/tood-notes/" element={<Login />} />
-            <Route path="/tood-notes/tood-notes/signup" element={<UserLogin />} />
+            <Route path="/tood-notes/signup" element={<UserLogin />} />
             <Route
-              path="/tood-notes/tood-notes/myaccount"
+              path="/tood-notes/myaccount"
               element={
                 <ProtectedRoute>
                   <Account />
@@ -39,7 +39,7 @@ function App() {
               }
             />
             <Route
-              path="/tood-notes/tood-notes/mynotes"
+              path="/tood-notes/mynotes"
               element={
                 <ProtectedRoute>
                   <Notes />

@@ -19,7 +19,7 @@ const UserLogin = () => {
       const name = nameRef.current.value;
       const password = passRef.current.value;
       if (email && name && password) registerUser(email, name, password);
-      navigate("/");
+      navigate("/tood-notes/");
     } catch (err) {
       console.log(err);
     }
@@ -36,7 +36,7 @@ const UserLogin = () => {
         <button type="submit">CREAR CUENTA</button>
         <div className="footer-login">
           ¿Ya tienes cuenta?{" "}
-          <Link to="/" className="link">
+          <Link to="/tood-notes/" className="link">
             Iniciar sesion
           </Link>
         </div>
