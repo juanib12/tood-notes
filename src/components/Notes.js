@@ -36,7 +36,7 @@ const Notes = () => {
 
   return (
     <div>
-      <div>
+      <div className="title-notes">
         <Title />
       </div>
       <div className="container_todos_notes">
