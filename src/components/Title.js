@@ -10,7 +10,7 @@ const Title = () => {
   const handleLogout = async () => {
     try {
       await logoutUser;
-      navigate("/");
+      navigate("/tood-notes/");
     } catch (err) {
       console.log(err.message);
     }
@@ -19,7 +19,7 @@ const Title = () => {
   return (
     <header>
       <div className="menu_container">
-        <Link to="/home">
+        <Link to="/tood-notes/home">
           <div className="logo">
             <i class="bx bxs-notepad item-logo"></i>
             <h1 className="title">tood</h1>
@@ -43,13 +43,13 @@ const Title = () => {
                   <i class="bx bxs-chevron-down-square"></i>
                 </div>
                 <ul>
-                  <Link className="link-user" to="../myaccount">
+                  <Link className="link-user" to="/tood-notes/myaccount">
                     <li>Mi cuenta</li>
                   </Link>
-                  <Link className="link-user" to="../mynotes">
+                  <Link className="link-user" to="/tood-notes/mynotes">
                     <li>Mis tareas</li>
                   </Link>
-                  <Link className="link-user" to="../help">
+                  <Link className="link-user" to="/tood-notes/help">
                     <li>Ayuda</li>
                   </Link>
                   <button onClick={handleLogout} variant="outlined">
