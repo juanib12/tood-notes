@@ -49,9 +49,6 @@ const Title = () => {
                   <Link className="link-user" to="/tood-notes/mynotes">
                     <li>Mis tareas</li>
                   </Link>
-                  <Link className="link-user" to="/tood-notes/help">
-                    <li>Ayuda</li>
-                  </Link>
                   <button onClick={handleLogout} variant="outlined">
                     Salir
                   </button>
