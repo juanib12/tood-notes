@@ -92,15 +92,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 250px;
+    position: relative;
+    width: 100%;
+    left: -250px;
   }
 
   .paper-account {
-    width: 350px;
+    width: 300px;
+    max-width: 300px;
   }
 
   .paper-account2 {
-    width: 350px;
+    width: 300px;
+    max-width: 300px;
   }
 }
 
@@ -110,15 +114,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 250px;
+    position: relative;
+    width: 100%;
+    left: -250px;
   }
 
   .paper-account {
-    width: 350px;
+    width: 300px;
+    max-width: 300px;
   }
 
   .paper-account2 {
-    width: 350px;
+    width: 300px;
+    max-width: 300px;
   }
 }
 
@@ -128,14 +136,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 250px;
+    position: relative;
+    width: 100%;
+    left: -400px;
   }
 
   .paper-account {
-    width: 350px;
+    width: 300px;
+    max-width: 300px;
+  }
+
+  .paper-account p{
+    position: relative;
+    left: -50px;
   }
 
   .paper-account2 {
-    width: 350px;
+    width: 300px;
+    max-width: 300px;
+  }
+  
+  .paper-account2 p{
+    position: relative;
+    left: -50px;
   }
 }

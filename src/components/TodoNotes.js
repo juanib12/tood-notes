@@ -12,7 +12,7 @@ export default function TodoNotes({ todo }) {
         className="list"
       />
       <div className="buttons-notes">
-        <Link to="/home">Editar</Link>
+        <Link to="/tood-notes/home">Editar</Link>
       </div>
     </div>
   );

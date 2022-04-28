@@ -42,7 +42,7 @@ const Title = () => {
                   <h5>{user.displayName}</h5>
                   <i class="bx bxs-chevron-down-square"></i>
                 </div>
-                <ul>
+                <ul className="drop-user-a">
                   <Link className="link-user" to="/tood-notes/myaccount">
                     <li>Mi cuenta</li>
                   </Link>

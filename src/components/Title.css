@@ -74,15 +74,19 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .dropdown-user ul{
+  .dropdown-user ul {
     position: absolute;
   }
 }
 
 @media only screen and (max-width: 600px) {
-
+  .dropdown-user ul {
+    position: absolute;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-
+  .dropdown-user ul {
+    position: absolute;
+  }
 }
