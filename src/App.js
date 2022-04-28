@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       {error && <p className="error">{error}</p>}
       {loading ? (
-        <h2>Loading...</h2>
+        <div className="loader"></div>
       ) : (
         <>
           <Routes>

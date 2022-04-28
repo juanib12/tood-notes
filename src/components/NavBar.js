@@ -1,12 +1,12 @@
 import '../App.css'
+import LogoNavBar from '../images/logo-navbar.png'
 
 const NavBar = () => {
   return (
     <header>
       <div className="menu_container-navbar">
         <div className="logo-navbar">
-          <i class="bx bxs-notepad item-navbar"></i>
-          <h1 className="title">tood</h1>
+          <img src={LogoNavBar} />
         </div>
       </div>
     </header>

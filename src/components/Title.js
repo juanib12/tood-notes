@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./Title.css";
 import { useUserContext } from "../context/userContext";
+import LogoTitle from "../images/logo-title.png"
 
 const Title = () => {
   const { user, logoutUser } = useUserContext();
@@ -21,8 +22,7 @@ const Title = () => {
       <div className="menu_container">
         <Link to="/tood-notes/home">
           <div className="logo">
-            <i class="bx bxs-notepad item-logo"></i>
-            <h1 className="title">tood</h1>
+            <img src={LogoTitle}/>
           </div>
         </Link>
 
