@@ -81,3 +81,35 @@
     font-size: 35px;
     color: #121212;
 }
+
+@media only screen and (max-width: 500px) {
+    .logo-navbar {
+        left: 0px;
+    }
+
+    .form-login {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .logo-navbar {
+        left: 0px;
+    }
+
+    .form-login {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo-navbar {
+        left: 0px;
+    }
+
+    .form-login {
+        width: 100%;
+    }
+}

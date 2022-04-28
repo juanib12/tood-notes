@@ -193,6 +193,7 @@ button:focus {
 }
 
 .title {
+  position: relative;
   color: #111111;
 }
 
@@ -380,7 +381,13 @@ scroll-page {
   }
 
   .dropdown {
-    display: none;
+    display: flex;
+  }
+
+  .drop-list{
+    display: flex;
+    left: 200px;
+    position: relative;
   }
 
   .form {
@@ -442,11 +449,12 @@ scroll-page {
   }
 
   .dropdown {
-    display: none;
+    display: flex;
   }
 
   .drop-list {
-    display: none;
+    display: flex;
+    left: 45px;
   }
 
   .form {
@@ -479,7 +487,7 @@ scroll-page {
   }
 
   .dropdown {
-    display: none;
+    display: flex;
   }
 
   .form {

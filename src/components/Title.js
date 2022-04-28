@@ -19,20 +19,23 @@ const Title = () => {
   return (
     <header>
       <div className="menu_container">
-        <div className="logo">
-          <i class="bx bxs-notepad item-logo"></i>
-          <h1 className="title">tood</h1>
-        </div>
+        <Link to="/home">
+          <div className="logo">
+            <i class="bx bxs-notepad item-logo"></i>
+            <h1 className="title">tood</h1>
+          </div>
+        </Link>
+
         <nav>
           <ul class="dropdown">
-            <div className="drop-list">
+            {/* <div className="drop-list">
               <i class="bx bx-task item-list"></i>
               <a href="#">Tareas</a>
             </div>
             <div className="drop-list">
               <i class="bx bxs-devices item-list"></i>
               <a href="#">Más apps</a>
-            </div>
+            </div> */}
             <ul className="dropdown-user drop-list">
               <li>
                 <div className="drop-user">
