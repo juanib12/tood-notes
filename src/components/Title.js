@@ -10,7 +10,7 @@ const Title = () => {
 
   const handleLogout = async () => {
     try {
-      await logoutUser;
+      await logoutUser();
       navigate("/tood-notes/");
     } catch (err) {
       console.log(err.message);

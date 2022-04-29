@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Account from "./components/Account";
 import Notes from "./components/Notes";
+import { UserContextProvider } from "./context/userContext";
 
 function App() {
   const { loading, error, user } = useUserContext();
@@ -14,39 +15,40 @@ function App() {
 
   return (
     <div className="App">
-      {error && <p className="error">{error}</p>}
       {loading ? (
         <div className="loader"></div>
       ) : (
         <>
-          <Routes>
-            <Route
-              path="/tood-notes/home"
-              element={
-                <ProtectedRoute>
-                  <Home />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="/tood-notes/" element={<Login />} />
-            <Route path="/tood-notes/signup" element={<UserLogin />} />
-            <Route
-              path="/tood-notes/myaccount"
-              element={
-                <ProtectedRoute>
-                  <Account />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/tood-notes/mynotes"
-              element={
-                <ProtectedRoute>
-                  <Notes />
-                </ProtectedRoute>
-              }
-            />
-          </Routes>
+          <UserContextProvider>
+            <Routes>
+              <Route
+                path="/tood-notes/home"
+                element={
+                  <ProtectedRoute>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="/tood-notes/" element={<Login />} />
+              <Route path="/tood-notes/signup" element={<UserLogin />} />
+              <Route
+                path="/tood-notes/myaccount"
+                element={
+                  <ProtectedRoute>
+                    <Account />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/tood-notes/mynotes"
+                element={
+                  <ProtectedRoute>
+                    <Notes />
+                  </ProtectedRoute>
+                }
+              />
+            </Routes>
+          </UserContextProvider>
         </>
       )}
     </div>

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../firebase";
 
-export const UserContext = createContext({});
+const UserContext = createContext({});
 
 export const useUserContext = () => {
   return useContext(UserContext);
@@ -20,7 +20,7 @@ export const UserContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  useState(() => {
+  useEffect(() => {
     setLoading(true);
     const unsubscribe = onAuthStateChanged(auth, (res) => {
       if (res) {
@@ -67,7 +67,6 @@ export const UserContextProvider = ({ children }) => {
 
   const logoutUser = () => {
     signOut(auth)
-    localStorage.removeItem("user")
   };
 
   const forgotPassword = (email) => {
