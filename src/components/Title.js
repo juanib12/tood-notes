@@ -28,14 +28,6 @@ const Title = () => {
 
         <nav>
           <ul class="dropdown">
-            {/* <div className="drop-list">
-              <i class="bx bx-task item-list"></i>
-              <a href="#">Tareas</a>
-            </div>
-            <div className="drop-list">
-              <i class="bx bxs-devices item-list"></i>
-              <a href="#">Más apps</a>
-            </div> */}
             <ul className="dropdown-user drop-list">
               <li>
                 <div className="drop-user">

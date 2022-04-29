@@ -55,7 +55,7 @@
 .paper-account2 img {
   display: flex;
   position: relative;
-  margin-left: 150px;
+  left: 250px;
 }
 
 .paper-account2 {
@@ -84,6 +84,37 @@
   position: relative;
   margin-left: 150px;
   color: #808080;
+}
+
+.item-add {
+  position: relative;
+  left: 150px;
+  margin-right: 150px;
+}
+
+.add-avatar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-avatar button {
+  cursor: pointer;
+  border-radius: 7px;
+  border: none;
+  background-color: #ffcb74;
+  color: #121212;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+  position: relative;
+  left: 0px;
+}
+
+.avatar {
+  position: relative;
+  left: -100px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -120,6 +151,44 @@
   .paper-account2 p {
     position: relative;
     left: -50px;
+  }
+
+  /**/
+  .add-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .add-avatar button {
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffcb74;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -150px;
+  }
+
+  .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 7px;
   }
 }
 
@@ -158,6 +227,44 @@
     position: relative;
     left: -50px;
   }
+
+  /**/
+  .add-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .add-avatar button {
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffcb74;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -150px;
+  }
+
+  .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 7px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -185,6 +292,7 @@
   }
 
   .paper-account2 {
+    height: 100px;
     width: 300px;
     max-width: 300px;
     overflow-x: scroll;
@@ -194,5 +302,43 @@
   .paper-account2 p {
     position: relative;
     left: -50px;
+  }
+
+  /**/
+  .add-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+  .add-avatar button {
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #ffcb74;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 15px;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+  }
+
+  .avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -150px;
+  }
+
+  .avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 7px;
   }
 }

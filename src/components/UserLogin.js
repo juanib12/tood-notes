@@ -30,9 +30,9 @@ const UserLogin = () => {
       <NavBar />
       <form onSubmit={onSubmit} className="form-login form">
         <h2>¡Hola! Para seguir, ingresá los siguientes datos.</h2>
-        <input placeholder="Email" type="email" ref={emailRef} />
-        <input placeholder="Name" type="text" ref={nameRef} />
-        <input placeholder="Password" type="password" ref={passRef} />
+        <input placeholder="Correo electrónico" type="email" ref={emailRef} />
+        <input placeholder="Nombre" type="text" ref={nameRef} />
+        <input placeholder="Contraseña" type="password" ref={passRef} />
         <button type="submit">CREAR CUENTA</button>
         <div className="footer-login">
           ¿Ya tienes cuenta?{" "}

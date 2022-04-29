@@ -47,6 +47,16 @@ export const UserContextProvider = ({ children }) => {
       .finally(() => setLoading(false));
   };
 
+  const addPhotoUser = (photoURL) => {
+    setLoading(true);
+    updateProfile(auth.currentUser, {
+      photoURL: photoURL,
+    })
+      .then((res) => console.log(res))
+      .catch((err) => setError(err.message))
+      .finally(() => setLoading(false));
+  };
+
   const signInUser = (email, password) => {
     setLoading(true);
     signInWithEmailAndPassword(auth, email, password)
@@ -56,7 +66,8 @@ export const UserContextProvider = ({ children }) => {
   };
 
   const logoutUser = () => {
-    signOut(auth);
+    signOut(auth)
+    localStorage.removeItem("user")
   };
 
   const forgotPassword = (email) => {
@@ -71,6 +82,7 @@ export const UserContextProvider = ({ children }) => {
     registerUser,
     logoutUser,
     forgotPassword,
+    addPhotoUser,
   };
   return (
     <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>
