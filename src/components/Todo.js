@@ -13,7 +13,7 @@ export default function Todo({
     e.preventDefault();
     if (todo.complete === true) {
       setNewTitle(todo.title);
-    } else {
+    } else{
       todo.title = "";
       setNewTitle(e.target.value);
     }
