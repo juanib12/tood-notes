@@ -11,7 +11,7 @@ const Title = () => {
   const handleLogout = async () => {
     try {
       await logoutUser();
-      navigate("/tood-notes/");
+      navigate("/");
     } catch (err) {
       console.log(err.message);
     }
@@ -20,7 +20,7 @@ const Title = () => {
   return (
     <header>
       <div className="menu_container">
-        <Link to="/tood-notes/home">
+        <Link to="/home">
           <div className="logo">
             <img src={LogoTitle}/>
           </div>
@@ -35,10 +35,10 @@ const Title = () => {
                   <i class="bx bxs-chevron-down-square"></i>
                 </div>
                 <ul className="drop-user-a">
-                  <Link className="link-user" to="/tood-notes/myaccount">
+                  <Link className="link-user" to="/myaccount">
                     <li>Mi cuenta</li>
                   </Link>
-                  <Link className="link-user" to="/tood-notes/mynotes">
+                  <Link className="link-user" to="/mynotes">
                     <li>Mis tareas</li>
                   </Link>
                   <button onClick={handleLogout} variant="outlined">

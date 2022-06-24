@@ -22,17 +22,17 @@ function App() {
           <UserContextProvider>
             <Routes>
               <Route
-                path="/tood-notes/home"
+                path="/home"
                 element={
                   <ProtectedRoute>
                     <Home />
                   </ProtectedRoute>
                 }
               />
-              <Route path="/tood-notes/" element={<Login />} />
-              <Route path="/tood-notes/signup" element={<UserLogin />} />
+              <Route path="/" element={<Login />} />
+              <Route path="/signup" element={<UserLogin />} />
               <Route
-                path="/tood-notes/myaccount"
+                path="/myaccount"
                 element={
                   <ProtectedRoute>
                     <Account />
@@ -40,7 +40,7 @@ function App() {
                 }
               />
               <Route
-                path="/tood-notes/mynotes"
+                path="/mynotes"
                 element={
                   <ProtectedRoute>
                     <Notes />

@@ -20,7 +20,7 @@ const UserLogin = () => {
         console.log(error);
       } else {
         await registerUser(email, name, password);
-        navigate("/tood-notes/");
+        navigate("/");
       }
     } catch (err) {
       console.log(err);
@@ -51,7 +51,7 @@ const UserLogin = () => {
         <button type="submit">CREAR CUENTA</button>
         <div className="footer-login">
           ¿Ya tienes cuenta?
-          <Link to="/tood-notes/" className="link">
+          <Link to="/" className="link">
             Iniciar sesion
           </Link>
         </div>

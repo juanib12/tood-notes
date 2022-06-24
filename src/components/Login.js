@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await signInUser(email, password);
-      navigate("/tood-notes/home");
+      navigate("/home");
     } catch (err) {
       console.log(err);
     }
@@ -45,7 +45,7 @@ const Login = () => {
         <button type="submit">INICIAR SESION</button>
         <div className="footer-login">
           ¿No tienes una cuenta?
-          <Link to="/tood-notes/signup" className="link">
+          <Link to="/signup" className="link">
             Crear cuenta
           </Link>
         </div>
