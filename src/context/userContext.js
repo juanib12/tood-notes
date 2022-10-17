@@ -42,7 +42,7 @@ export const UserContextProvider = ({ children }) => {
           displayName: name,
         })
       )
-      .then((res) => console.log(res))
+      .then((res) => null)
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   };
@@ -52,7 +52,7 @@ export const UserContextProvider = ({ children }) => {
     updateProfile(auth.currentUser, {
       photoURL: photoURL,
     })
-      .then((res) => console.log(res))
+      .then((res) => null)
       .catch((err) => setError(err.message))
       .finally(() => setLoading(false));
   };
