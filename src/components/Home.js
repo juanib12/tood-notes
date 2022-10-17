@@ -58,7 +58,6 @@ export const Home = () => {
     return () => unsubscribe();
   }, []);
 
-  console.log(todosCompleted);
 
   const handleEdit = async (todo, title) => {
     await updateDoc(doc(db, "todos", todo.id), { title: title });
@@ -74,7 +73,6 @@ export const Home = () => {
     await deleteDoc(doc(db, "todos", id));
   };
 
-  console.log(todos);
 
   return (
     <div>

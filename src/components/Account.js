@@ -37,7 +37,6 @@ const Account = () => {
       }
     );
   };
-  console.log(imgUrl);
 
   return (
     <div>

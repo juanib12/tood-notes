@@ -11,7 +11,6 @@ import { UserContextProvider } from "./context/userContext";
 function App() {
   const { loading, error, user } = useUserContext();
 
-  console.log(user);
 
   return (
     <div className="App">
