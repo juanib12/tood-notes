@@ -386,6 +386,38 @@ scroll-page {
   left: 680px;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.footer_items {
+  position: relative;
+  margin-right: 15px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer_links {
+  text-decoration: none;
+  color: #808080;
+  margin-left: 5px;
+}
+
+.footer_items i {
+  font-size: 1.5rem;
+  color: #3665d2;
+}
+
+.footer_links:hover {
+  color: #000;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -612,6 +644,18 @@ scroll-page {
 
   .loader {
     left: 120px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .footer_items {
+    font-size: 0.9rem;
   }
 }
 

@@ -16,6 +16,9 @@ import {
 import { db } from "../firebase";
 import { useEffect, useState } from "react";
 import { useUserContext } from "../context/userContext";
+import Footer from './Footer'
+
+
 
 export const Home = () => {
   const [todos, setTodos] = useState([]);
@@ -126,6 +129,7 @@ export const Home = () => {
           </scroll-container>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
